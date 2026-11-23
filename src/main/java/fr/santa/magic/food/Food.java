@@ -2,9 +2,9 @@ package fr.santa.magic.food;
 
 public abstract class Food {
     private final FoodType foodType;
-    private final int nutritionalValue;
+    private final float nutritionalValue;
 
-    public Food(FoodType foodType, int nutritionalValue) {
+    public Food(FoodType foodType, float nutritionalValue) {
         this.foodType = foodType;
         this.nutritionalValue = nutritionalValue;
     }
@@ -13,7 +13,7 @@ public abstract class Food {
         return this.foodType;
     }
 
-    public int getNutritionalValue() {
+    public float getNutritionalValue() {
         return this.nutritionalValue;
     }
 }

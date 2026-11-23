@@ -18,7 +18,7 @@ public abstract class Character {
     private String name;
     private Sex sex;
     private int age;
-    private float foodBar;
+    private float foodBar; // 0 = affamé, 100 = rassasié
     private float energyBar;
     private boolean active;
     private float christmasMagic;
@@ -66,7 +66,7 @@ public abstract class Character {
 
     public void eat(Food food) {
         if (this.active) {
-            foodBar += food.getNutritionalValue();
+            increaseOrDecreaseFoodBar(food.getNutritionalValue());
         }
     }
 
@@ -77,6 +77,16 @@ public abstract class Character {
     public void increaseOrDecreaseChristmasMagic(float amount) {
         this.christmasMagic += amount;
         this.christmasMagic = Math.clamp(this.christmasMagic, MAGIC_MIN, MAGIC_MAX );
+    }
+
+    public void increaseOrDecreaseFoodBar(float amount) {
+        this.foodBar += amount;
+        this.foodBar = Math.clamp(this.foodBar, FOOD_MIN, FOOD_MAX );
+    }
+
+    public void increaseOrDecreaseEnergyBar(float amount) {
+        this.energyBar += amount;
+        this.energyBar = Math.clamp(this.energyBar, ENERGY_MIN, ENERGY_MAX );
     }
 
     protected boolean beFantastic() {
