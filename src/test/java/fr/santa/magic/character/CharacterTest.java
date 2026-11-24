@@ -1,3 +1,5 @@
+package fr.santa.magic.character;
+
 import fr.santa.magic.food.Food;
 import fr.santa.magic.food.FoodType;
 
