@@ -87,7 +87,7 @@ public abstract class Character {
     public void increaseOrDecreaseEnergyBar(float amount) {
         this.energyBar += amount;
         this.energyBar = Math.clamp(this.energyBar, ENERGY_MIN, ENERGY_MAX );
-    }
+    }il
 
     protected boolean beFantastic() {
         if (!isActive()) {
