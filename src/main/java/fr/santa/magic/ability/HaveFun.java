@@ -1,6 +1,6 @@
 package fr.santa.magic.ability;
 
-public interface Playable {
+public interface HaveFun {
     boolean haveFun();
 
 }
