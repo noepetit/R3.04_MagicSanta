@@ -1,4 +1,7 @@
-# R3.04_TD3
-Vous retrouverez ici, dans ce dépôt GitHub le travail réalisé le 19/11/2026
+# R3.04 Qualité de Dev
 
-A noté, que je viens de créer le repository pour vous l'envoyer. Je travaillais en local à la base.
+## Équipe :
+* BECHERINI Milann ;
+* TASTET Timéo ;
+* REGUIG Abdelrahmane ;
+* PETIT Noé ;
