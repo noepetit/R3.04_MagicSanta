@@ -41,3 +41,7 @@ build/
 ### AGENT IA ###
 AGENTS.md
 .agents/
+skills
+.mvn
+mvnw
+mvnw.cmd
